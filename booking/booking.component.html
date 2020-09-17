@@ -1,0 +1,13 @@
+<div class="container jumbtron">
+  <h2 class="display-4 text-center">會議室預約</h2>
+  <div class="list-group">
+    <a *ngFor="let mr of this.service.list" class="list-group-item list-group-item-light list-group-item-action d-fles justify-content-between align-items-center">
+      {{ mr.name}}
+      <div>
+        <span class="badge badge-pill badge-dark"> {{mr.size}} </span>
+        <span *ngIf="mr.projector" class="badge badge-pill badge-secondary">投影機</span>
+        <span *ngIf="mr.tv" class="badge badge-pill bage-secondary">電視</span>
+      </div>
+    </a>
+  </div>
+</div>
