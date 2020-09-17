@@ -1,0 +1,16 @@
+<div class="form-group">
+<div class="input-group">
+<div class="input-group-prepend">
+<div class="input-group-text bg-white">
+  
+</div>
+</div>
+<select name="Size" class="form-control" required #Size="ngModel" [(ngModel)]="service.formData.Size">
+<option value="-1">--- 請選擇會議室容納人次 ---</option>
+<option *ngFor="let cap of this.capacity" [value]="cap.value"
+[selected]=" (cap.value==Size.value) ? true : false">
+{{cap.text}}</option>
+</select>
+</div>
+</div>
+

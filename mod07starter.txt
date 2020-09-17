@@ -1,0 +1,27 @@
+<div class="container" style="margin: 20px">
+  <h1>會議室預約單</h1>
+  <form novalidate="false">
+    <div class="form-group">
+      <label for="name">租借人姓名</label>
+      <input type="text" class="form-control" id="name" required name="name" minlength="4" placeholder="請輸入租借者的姓名">
+    </div>
+    <div class="form-group">
+      <label for="Nofpeople">參與人數</label>
+      <input type="number" class="form-control" id="Nofpeople" required name="Nofpeople" placeholder="參與人員1-40名" min="1"
+        max="40">
+    </div>
+    <div class="form-group">
+      <label for="size">分機號碼</label>
+      <input type="text" class="form-control" id="extNo" placeholder="租借者的辦公室分機號碼" required name="extNo"
+        pattern="[0-9]{4}" title="4個數字">
+    </div>
+    <div class="form-group">
+      <label for="size">租借時間</label>
+      <input type="datetime" class="form-control" id="startDate" placeholder="起始時間" required name="startDate">
+      <input type="datetime" class="form-control" id="endDate" placeholder="退還時間" required name="endDate">
+    </div>
+    <div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>

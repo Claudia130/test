@@ -1,0 +1,14 @@
+<form #form="ngForm" autocomplete="off">
+    <input type="hidden" name="ID" [value]="service.formData.ID">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    
+                </div>
+            </div>
+            <input name="Name" class="form-control" placeholder="·|Ä³«Ç¦WºÙ" required #Name="ngModel"
+                [(ngModel)]="service.formData.Name">
+        </div>
+</div>
+</form>

@@ -1,0 +1,29 @@
+<div class="form-row">
+<div class="form-group col-md-6" >
+   <div class="input-group">
+      <div class="input-group-prepend">
+       <div class="input-group-text bg-white"> 
+         <input type="checkbox" 
+           aria-label="Checkbox for following text input"
+           name="Projector" #Projector="ngModel"        
+           [(ngModel)]="service.formData.Projector" > 
+      </div>
+    </div> 
+    <label class="form-control" >投影機</label>
+</div> 
+</div>
+
+<div class="form-group col-md-6">
+<div class="input-group">
+   <div class="input-group-prepend">
+    <div class="input-group-text bg-white">
+      <input type="checkbox" 
+            aria-label="Checkbox for following text input"
+            name="TV" #TV="ngModel" 
+            [(ngModel)]="service.formData.TV" >
+    </div>
+   </div>
+   <label class="form-control" >電視</label>
+</div> 
+</div> 
+</div>
